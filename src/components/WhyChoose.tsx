@@ -5,7 +5,7 @@ const features = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
       </svg>
     ),
-    title: 'Topic Intelligence (Layer 2)',
+    title: 'Topic Intelligence',
     description:
       'Our system learns what topics trend, what niches convert, and what formats perform based on platform analytics and viral data. Build a proprietary data moat for your business.',
     bgColor: 'bg-primary',
@@ -17,7 +17,7 @@ const features = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
       </svg>
     ),
-    title: 'Optimization Engine (Layer 4)',
+    title: 'Optimization Engine',
     description:
       "AI continuously A/B tests hooks, length, formats, timing, and styles. Automatically scale what works and cut what doesn't. This is the real gold.",
     bgColor: 'bg-primary',
