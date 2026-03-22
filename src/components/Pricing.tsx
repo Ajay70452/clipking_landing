@@ -4,62 +4,62 @@ import { useState } from 'react'
 
 const plans = [
   {
-    name: 'Launch',
-    potentialIncome: '$50 - $200/month',
-    monthlyPrice: 19,
-    yearlyPrice: 15,
+    name: 'Creator',
+    potentialIncome: 'Focus on growth',
+    monthlyPrice: 99,
+    yearlyPrice: 79,
     features: {
-      series: '1 Series',
-      videos: '12 Videos',
-      autoPost: 'Auto-Post Videos',
+      series: 'Video Generation',
+      videos: 'Multi-Platform Publishing',
+      autoPost: 'Basic Performance Tracking',
     },
     additionalFeatures: [
-      { name: 'Edit & Preview Videos', included: true },
-      { name: 'Auto-Post To Channel', included: true },
-      { name: 'HD Video Resolution', included: true },
-      { name: 'Background Music', included: true },
-      { name: 'No Watermark', included: false },
-      { name: 'Download Videos', included: false },
+      { name: 'Topic Intelligence (Layer 2)', included: true },
+      { name: 'Video Understanding Pipeline', included: true },
+      { name: 'A/B Testing (Layer 4)', included: false },
+      { name: 'Optimization Engine', included: false },
+      { name: 'Custom Models', included: false },
+      { name: 'Dedicated Support', included: false },
     ],
     highlighted: false,
   },
   {
-    name: 'Grow',
-    potentialIncome: '$200 - $500/month',
-    monthlyPrice: 39,
-    yearlyPrice: 31,
+    name: 'Agency',
+    potentialIncome: 'Scale your operations',
+    monthlyPrice: 499,
+    yearlyPrice: 399,
     features: {
-      series: '1 Series',
-      videos: '30 Videos',
-      autoPost: 'Auto-Post Videos',
+      series: 'Advanced Video Generation',
+      videos: 'Agency-level Publishing',
+      autoPost: 'Advanced Analytics Dashboard',
     },
     additionalFeatures: [
-      { name: 'Edit & Preview Videos', included: true },
-      { name: 'Auto-Post To Channel', included: true },
-      { name: 'HD Video Resolution', included: true },
-      { name: 'Background Music', included: true },
-      { name: 'No Watermark', included: true },
-      { name: 'Download Videos', included: false },
+      { name: 'Topic Intelligence (Layer 2)', included: true },
+      { name: 'Video Understanding Pipeline', included: true },
+      { name: 'A/B Testing (Layer 4)', included: true },
+      { name: 'Optimization Engine', included: true },
+      { name: 'Custom Models', included: false },
+      { name: 'Dedicated Support', included: false },
     ],
     highlighted: true,
   },
   {
-    name: 'Scale',
-    potentialIncome: '$500 - $2300/month',
-    monthlyPrice: 69,
-    yearlyPrice: 55,
+    name: 'Enterprise',
+    potentialIncome: 'Dominate your market',
+    monthlyPrice: 5000,
+    yearlyPrice: 4000,
     features: {
-      series: '1 Series',
-      videos: '60 Videos',
-      autoPost: 'Auto-Post Videos',
+      series: 'Custom Video Generation',
+      videos: 'Enterprise Publishing Suite',
+      autoPost: 'Full API Access',
     },
     additionalFeatures: [
-      { name: 'Edit & Preview Videos', included: true },
-      { name: 'Auto-Post To Channel', included: true },
-      { name: 'HD Video Resolution', included: true },
-      { name: 'Background Music', included: true },
-      { name: 'No Watermark', included: true },
-      { name: 'Download Videos', included: true },
+      { name: 'Topic Intelligence (Layer 2)', included: true },
+      { name: 'Video Understanding Pipeline', included: true },
+      { name: 'A/B Testing (Layer 4)', included: true },
+      { name: 'Optimization Engine', included: true },
+      { name: 'Custom Models', included: true },
+      { name: 'Dedicated Support', included: true },
     ],
     highlighted: false,
   },
@@ -72,8 +72,8 @@ export default function Pricing() {
     <section id="pricing" className="py-20 bg-dark-surface1">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl md:text-4xl font-bold text-text-primary text-center mb-4">
-          Lets start generate<br />
-          passive income
+          Lets start generating<br />
+          revenue
         </h2>
 
         {/* Billing toggle */}
@@ -108,9 +108,6 @@ export default function Pricing() {
               }`}
             >
               <h3 className="text-xl font-bold text-text-primary mb-1">{plan.name}</h3>
-              <p className="text-primary text-sm mb-4">
-                Potential Income — {plan.potentialIncome}
-              </p>
 
               <div className="mb-6">
                 <span className="text-4xl font-bold text-text-primary">
@@ -169,15 +166,16 @@ export default function Pricing() {
                 ))}
               </div>
 
-              <button
-                className={`w-full py-3 rounded-full font-medium transition-colors ${
-                  plan.highlighted
-                    ? 'bg-primary text-dark-bg hover:bg-primary-hover'
-                    : 'bg-dark-surface3 text-text-primary hover:bg-dark-surface1'
-                }`}
+              <a 
+                href="#waitlist"
+                className={`w-full py-3 px-6 rounded-full font-semibold transition-colors block text-center
+                  ${plan.highlighted 
+                    ? 'bg-primary text-dark-bg hover:bg-primary-hover' 
+                    : 'bg-dark-surface3 text-text-primary hover:bg-dark-surface2'
+                  }`}
               >
                 Get started
-              </button>
+              </a>
             </div>
           ))}
         </div>

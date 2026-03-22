@@ -18,10 +18,10 @@ export default function Footer() {
                   <path d="M8 5v14l11-7z" />
                 </svg>
               </div>
-              <span className="text-xl font-bold text-text-primary">Clip King</span>
+              <span className="text-xl font-bold text-text-primary">Reelr</span>
             </div>
             <p className="text-text-muted text-sm">
-              Generate passive income with AI-powered short-form video creation.
+              The ultimate video distribution and optimization platform to drive growth and revenue.
             </p>
           </div>
 
@@ -75,7 +75,7 @@ export default function Footer() {
           </div>
 
           <p className="text-text-muted text-sm">
-            &copy; {new Date().getFullYear()} Clip King. All rights reserved.
+            &copy; {new Date().getFullYear()} Reelr. All rights reserved.
           </p>
         </div>
       </div>

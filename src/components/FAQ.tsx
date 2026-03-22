@@ -7,73 +7,70 @@ const tabs = ['General', 'Pricing', 'Application', 'Other']
 const faqData: Record<string, { question: string; answer: string }[]> = {
   General: [
     {
-      question: 'What is a faceless AI video generator?',
+      question: 'What is Reelr?',
       answer:
-        "A faceless AI video generator creates videos without showing a person's face, using AI tools to generate visuals, captions, voiceovers, and music. BigMotion automates the entire process, allowing users to create unique videos quickly and efficiently.",
+        "Reelr is a comprehensive video distribution and optimization platform. We don't just generate videos—we use Topic Intelligence to find winning niches, generate high-performing variations, publish them across all major platforms, and automatically A/B test hooks and formats to drive real business growth.",
     },
     {
-      question: 'What is the best AI faceless video creator?',
+      question: 'How is Reelr different from standard AI video generators?',
       answer:
-        'BigMotion shines as a top choice for creating faceless videos with AI, thanks to:\n\n• A fully automated process: from script to final edit.\n• Smart use of cutting-edge AI, including ElevenLabs for natural-sounding voices.\n• Affordable pricing plans that deliver great value.',
+        'Standard generators just create videos. Reelr is an end-to-end growth engine. Our Optimization Engine (Layer 4) automatically tests hooks, lengths, and styles at scale. We also use a proprietary Video Understanding Pipeline to extract structural data from successful videos, building a unique data moat for your account.',
     },
     {
-      question: 'What is a series?',
+      question: 'What is a Series in Reelr?',
       answer:
-        'A series is a collection of related videos centered around a specific topic. For example, you could create a series called "Fun facts," where BigMotion automatically creates and posts a new video three times a week, or even daily, depending on your plan.',
-    },
-    {
-      question: 'How to create a video?',
-      answer:
-        "First, you'll need to set up a series. Once you've done that, a video will be automatically lined up for production. Each series has only one video available at a time, and a new video will be generated once the previous one has been published",
-    },
-    {
-      question: 'What topics does BigMotion support?',
-      answer:
-        'Clip King is ideal for a variety of content, including motivational videos, interesting history, crypto topic and more.',
+        'A Series is an automated content pipeline. You define the broad parameters (like targeting "B2B SaaS Founders"), and Reelr handles the entire lifecycle: discovering trending sub-topics, generating video variations, scheduling publication, and optimizing the mix based on real-time performance data.',
     },
     {
       question: 'Am I the owner of the videos?',
       answer:
-        'You own the videos outright, so you can use them however you want. You can download them for use on other platforms or even sell them to clients.',
+        'Yes, you retain full ownership of all content generated and distributed through the platform. This is fully white-labeled for use by creators, agencies, and enterprise marketing teams.',
     },
     {
-      question: 'Can I generate in other languages?',
+      question: 'Can I generate and distribute in other languages?',
       answer:
-        "Yes! We support most languages. If you need a language that isn't listed, feel free to reach out to our support team.",
+        "Yes! Our models support localization and distribution in most major global languages, allowing you to seamlessly scale your brand's reach internationally.",
     },
   ],
   Pricing: [
     {
-      question: 'What payment methods do you accept?',
-      answer: 'We accept all major credit cards, PayPal, and cryptocurrency payments.',
+      question: 'What is included in the Agency tier?',
+      answer:
+        'The Agency tier ($299-$999/mo) is built for teams managing multiple clients. It includes advanced video generation, agency-level publishing tools, access to our Layer 4 Optimization Engine for A/B testing, and an advanced analytics dashboard for client reporting.',
     },
     {
-      question: 'Can I cancel my subscription anytime?',
-      answer: 'Yes, you can cancel your subscription at any time. Your access will continue until the end of your billing period.',
+      question: 'Who is the Enterprise plan for?',
+      answer:
+        'Our Enterprise plan ($2k-$10k/mo) is designed for large brands and media companies aiming to dominate their market. It provides custom video generation models, full API access, dedicated support, and bespoke implementations of our Topic Intelligence data moat.',
     },
     {
-      question: 'Is there a free trial?',
-      answer: 'We offer a 7-day free trial for new users to test all features before committing to a plan.',
+      question: 'Can I upgrade or downgrade my plan?',
+      answer:
+        'Yes, you can easily scale your plan up or down as your video distribution needs change. Billing is prorated automatically.',
     },
   ],
   Application: [
     {
-      question: 'How do I get started?',
-      answer: 'Simply sign up, choose your plan, and start creating your first series. Our intuitive interface will guide you through the process.',
+      question: 'How does the Optimization Engine work?',
+      answer:
+        "Our Optimization Engine continuously A/B tests different elements of your videos—like the first 3-second hook, the visual style, and the overall length. It learns what drives engagement on each specific platform (TikTok, Shorts, Reels) and automatically scales the winning variations.",
     },
     {
-      question: 'Can I edit videos after generation?',
-      answer: 'Yes, you can preview and edit your videos before publishing. Make adjustments to scripts, visuals, and audio as needed.',
+      question: 'What data does Topic Intelligence provide?',
+      answer:
+        'Topic Intelligence analyzes platform algorithms and viral trends to predict what topics will convert best for your specific niche. It removes the guesswork from content strategy by telling you exactly what to create before you even start producing.',
     },
   ],
   Other: [
     {
-      question: 'Do you offer customer support?',
-      answer: 'Yes, we offer 24/7 customer support via email and live chat. Our team is always ready to help.',
+      question: 'Do you offer custom integrations?',
+      answer:
+        'Yes, custom API integrations and data pipeline setups are available for our Enterprise customers to connect Reelr with your existing marketing stack.',
     },
     {
-      question: 'Can I use BigMotion for client work?',
-      answer: 'Absolutely! Many of our users create videos for clients. You own all content you create.',
+      question: 'Do you offer customer support?',
+      answer:
+        'Yes, we offer comprehensive support. Creator and Agency tiers receive priority email and chat support, while Enterprise users get a dedicated account manager and Slack connect channel.',
     },
   ],
 }

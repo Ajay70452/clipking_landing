@@ -8,6 +8,7 @@ import AITools from '@/components/AITools'
 import Pricing from '@/components/Pricing'
 import FAQ from '@/components/FAQ'
 import Footer from '@/components/Footer'
+import WaitlistModal from '@/components/WaitlistModal'
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <Pricing />
       <FAQ />
       <Footer />
+      <WaitlistModal />
     </main>
   )
 }

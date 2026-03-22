@@ -7,15 +7,15 @@ export default function EasyVideos() {
           <div className="bg-primary rounded-3xl p-8 md:p-12">
             <h2 className="text-3xl md:text-4xl font-bold text-dark-bg mb-6">
               Making Videos That<br />
-              Earn Just Got Easier
+              Grow Just Got Easier
             </h2>
             <p className="text-dark-bg/80 text-lg mb-8">
               Forget complex tools. We have simple buttons and forms.
               All you do is choose topics and click &apos;Generate&apos;.
             </p>
-            <button className="px-8 py-4 bg-dark-bg text-white font-semibold rounded-full hover:bg-dark-surface3 transition-colors">
-              Start Earning Now
-            </button>
+            <a href="#waitlist" className="px-8 py-4 bg-dark-bg text-white font-semibold rounded-full hover:bg-dark-surface3 transition-colors inline-block">
+              Start Growing Now
+            </a>
           </div>
 
           {/* Right side - App mockup */}
@@ -28,7 +28,7 @@ export default function EasyVideos() {
                     <path d="M8 5v14l11-7z" />
                   </svg>
                 </div>
-                <span className="font-semibold text-text-primary">BigMotion</span>
+                <span className="font-semibold text-text-primary">Reelr</span>
               </div>
 
               {/* Welcome message */}

@@ -46,20 +46,22 @@ export default function Hero() {
 
         {/* Headline */}
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-text-primary leading-tight mb-6">
-          Generate Passive Income<br />
-          with AI-generated<br />
-          Shorts on Autopilot
+          Grow your business<br />
+          using automated video.
         </h1>
 
         {/* Description */}
         <p className="text-lg text-text-secondary max-w-2xl mx-auto mb-8">
-          Build a consistent income stream with automated short-form videos. BigMotion handles everything from creation to publishing, so you can earn while you sleep
+          Reelr is a complete video distribution and optimization platform. We find winning topics, generate variations, publish across platforms, and automatically optimize to drive leads and revenue.
         </p>
 
         {/* CTA Button */}
-        <button className="px-8 py-4 bg-primary text-dark-bg font-semibold rounded-full hover:bg-primary-hover transition-colors text-lg mb-12">
-          Start Earning Now
-        </button>
+        <a href="#waitlist" className="px-8 py-4 bg-primary text-dark-bg text-lg font-semibold rounded-full hover:bg-primary-hover transition-colors inline-flex items-center gap-2 mb-12">
+          Start Growing Now
+          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+        </a>
 
         {/* Social Proof - Platforms */}
         <div className="mb-4">
@@ -91,21 +93,7 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Trusted Users */}
-        <div className="mt-8">
-          <p className="text-text-muted text-sm mb-3">Trusted by Over 100k happy users</p>
-          <div className="flex justify-center -space-x-2">
-            {[...Array(5)].map((_, i) => (
-              <div
-                key={i}
-                className="w-10 h-10 rounded-full border-2 border-dark-bg bg-gradient-to-br from-primary to-accent"
-                style={{
-                  backgroundImage: `linear-gradient(${45 + i * 30}deg, #C8FF4D, #A4F35C)`,
-                }}
-              />
-            ))}
-          </div>
-        </div>
+
       </div>
     </section>
   )

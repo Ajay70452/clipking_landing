@@ -5,9 +5,9 @@ const features = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
       </svg>
     ),
-    title: 'Stop Wasting Time on Manual Work',
+    title: 'Topic Intelligence (Layer 2)',
     description:
-      'Unlike other platforms that require manual uploading and scheduling for each social network, BigMotion automates posting to YouTube Shorts, TikTok, and Instagram Reels, freeing up your time to focus on strategy and audience engagement.',
+      'Our system learns what topics trend, what niches convert, and what formats perform based on platform analytics and viral data. Build a proprietary data moat for your business.',
     bgColor: 'bg-primary',
     iconColor: 'text-dark-bg',
   },
@@ -17,9 +17,9 @@ const features = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
       </svg>
     ),
-    title: 'Real-Time Algorithm Adaptation',
+    title: 'Optimization Engine (Layer 4)',
     description:
-      "BigMotion uses advanced algorithms that monitor changes in each platform's rules and automatically optimize your content for maximum reach. You don't need to constantly track updates and manually adjust your strategy.",
+      "AI continuously A/B tests hooks, length, formats, timing, and styles. Automatically scale what works and cut what doesn't. This is the real gold.",
     bgColor: 'bg-primary',
     iconColor: 'text-dark-bg',
   },
@@ -29,9 +29,9 @@ const features = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
       </svg>
     ),
-    title: 'Sustainable Short-Form Video Business',
+    title: 'Video Understanding Pipeline',
     description:
-      "BigMotion is more than just a posting tool. It's a comprehensive solution for building a long-term, profitable short-form video business. We provide the tools you need to create, distribute, and monetize your content effectively.",
+      "We use specialized speech-to-text and vision-language models to extract hook text, topics, structure, and emotions. Raw videos become structured, actionable data.",
     bgColor: 'bg-primary',
     iconColor: 'text-dark-bg',
   },
@@ -42,7 +42,7 @@ export default function WhyChoose() {
     <section className="py-20 bg-dark-bg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl md:text-4xl font-bold text-text-primary text-center mb-16">
-          Why Choose BigMotion?
+          Why Choose Reelr?
         </h2>
 
         <div className="grid md:grid-cols-3 gap-6">
@@ -65,9 +65,9 @@ export default function WhyChoose() {
         </div>
 
         <div className="text-center mt-12">
-          <button className="px-8 py-4 bg-primary text-dark-bg font-semibold rounded-full hover:bg-primary-hover transition-colors">
-            Start Earning Now
-          </button>
+          <a href="#waitlist" className="px-8 py-4 bg-primary text-dark-bg font-semibold rounded-full hover:bg-primary-hover transition-colors inline-block">
+            Start Growing Now
+          </a>
         </div>
       </div>
     </section>

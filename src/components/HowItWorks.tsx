@@ -1,18 +1,18 @@
 const features = [
   {
-    title: 'Automated Content Creation',
+    title: 'Find Winning Topics',
     description:
-      'Our AI creates engaging short-form videos on autopilot, maximizing your earning potential without requiring constant effort',
+      'We analyze platform data to identify topics and niches with the highest conversion potential before you even create a video.',
   },
   {
-    title: 'Multi-Platform Distribution',
+    title: 'Generate Variations',
     description:
-      'Automatically publish your videos every day across YouTube Shorts, TikTok, and Instagram Reels to reach a wider audience and increase your passive income streams',
+      'Our AI creates multiple variations of your video, testing different hooks, formats, and styles to see what performs best.',
   },
   {
-    title: 'Monetization Optimization',
+    title: 'Publish & Optimize',
     description:
-      'BigMotion helps you optimize your videos for monetization, maximizing your passive income from social media platforms',
+      'Reelr publishes your content everywhere. Our Optimization Engine then automatically tracks performance and runs A/B tests at scale.',
   },
 ]
 
@@ -83,8 +83,8 @@ export default function HowItWorks() {
           {/* Right side - Features */}
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-text-primary mb-12">
-              How BigMotion Generates<br />
-              Your Passive Income
+              How Reelr Generates<br />
+              Your Growth
             </h2>
 
             <div className="space-y-8">
@@ -108,9 +108,9 @@ export default function HowItWorks() {
               ))}
             </div>
 
-            <button className="mt-10 px-8 py-4 bg-primary text-dark-bg font-semibold rounded-full hover:bg-primary-hover transition-colors">
-              Start Earning Now
-            </button>
+            <a href="#waitlist" className="mt-10 px-8 py-4 bg-primary text-dark-bg font-semibold rounded-full hover:bg-primary-hover transition-colors inline-block">
+              Start Growing Now
+            </a>
           </div>
         </div>
       </div>

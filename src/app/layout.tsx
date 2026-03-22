@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Clipking - AI Short Form Video Generator',
-  description: 'Create viral short-form videos with AI. Generate passive income with automated video creation.',
+  title: 'Reelr - AI Short Form Video Generator',
+  description: 'The ultimate video distribution and optimization platform. Grow your business using automated video.',
 }
 
 export default function RootLayout({

@@ -16,19 +16,12 @@ export default function Header() {
                 <path d="M8 5v14l11-7z" />
               </svg>
             </div>
-            <span className="text-xl font-bold text-text-primary">Clip King</span>
+            <span className="text-xl font-bold text-text-primary">Reelr</span>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
-            <div className="relative group">
-              <button className="flex items-center gap-1 text-text-primary hover:text-primary transition-colors">
-                Tools
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-            </div>
+
             <div className="relative group">
               <button className="flex items-center gap-1 text-dark-bg hover:text-text-muted transition-colors">
                 Resources
@@ -47,14 +40,10 @@ export default function Header() {
             </div>
           </nav>
 
-          {/* Desktop CTA Buttons */}
           <div className="hidden md:flex items-center gap-3">
-            <button className="px-4 py-2 text-text-primary border border-dark-surface3 rounded-full hover:border-primary transition-colors">
-              Log in
-            </button>
-            <button className="px-4 py-2 bg-primary text-dark-bg font-medium rounded-full hover:bg-primary-hover transition-colors">
-              Start Earning Now
-            </button>
+            <a href="#waitlist" className="px-4 py-2 bg-primary text-dark-bg font-medium rounded-full hover:bg-primary-hover transition-colors inline-block">
+              Start Growing Now
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -76,16 +65,13 @@ export default function Header() {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-dark-surface2">
             <nav className="flex flex-col gap-4">
-              <a href="#" className="text-text-primary hover:text-primary transition-colors">Tools</a>
+
               <a href="#" className="text-text-primary hover:text-primary transition-colors">Resources</a>
               <a href="#pricing" className="text-text-primary hover:text-primary transition-colors">Pricing</a>
               <div className="flex flex-col gap-3 pt-4 border-t border-dark-surface2">
-                <button className="px-4 py-2 text-text-primary border border-dark-surface3 rounded-full hover:border-primary transition-colors">
-                  Log in
-                </button>
-                <button className="px-4 py-2 bg-primary text-dark-bg font-medium rounded-full hover:bg-primary-hover transition-colors">
-                  Start Earning Now
-                </button>
+                <a href="#waitlist" className="px-4 py-2 bg-primary text-dark-bg font-medium rounded-full hover:bg-primary-hover transition-colors text-center inline-block">
+                  Start Growing Now
+                </a>
               </div>
             </nav>
           </div>
