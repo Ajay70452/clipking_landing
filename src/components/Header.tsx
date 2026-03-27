@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Link from 'next/link'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -10,14 +11,14 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center gap-2">
+          <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
             <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
               <svg className="w-5 h-5 text-dark-bg" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M8 5v14l11-7z" />
               </svg>
             </div>
             <span className="text-xl font-bold text-text-primary">Reelr</span>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
@@ -30,7 +31,7 @@ export default function Header() {
                 </svg>
               </button>
             </div>
-            <a href="#pricing" className="text-dark-bg hover:text-text-muted transition-colors">
+            <a href="/#pricing" className="text-dark-bg hover:text-text-muted transition-colors">
               Pricing
             </a>
             <div className="flex items-center gap-1 text-text-primary">
@@ -41,7 +42,7 @@ export default function Header() {
           </nav>
 
           <div className="hidden md:flex items-center gap-3">
-            <a href="#waitlist" className="px-4 py-2 bg-primary text-dark-bg font-medium rounded-full hover:bg-primary-hover transition-colors inline-block">
+            <a href="/#waitlist" className="px-4 py-2 bg-primary text-dark-bg font-medium rounded-full hover:bg-primary-hover transition-colors inline-block">
               Start Growing Now
             </a>
           </div>
@@ -66,10 +67,10 @@ export default function Header() {
           <div className="md:hidden py-4 border-t border-dark-surface2">
             <nav className="flex flex-col gap-4">
 
-              <a href="#" className="text-text-primary hover:text-primary transition-colors">Resources</a>
-              <a href="#pricing" className="text-text-primary hover:text-primary transition-colors">Pricing</a>
+              <a href="/contact" className="text-text-primary hover:text-primary transition-colors">Contact</a>
+              <a href="/#pricing" className="text-text-primary hover:text-primary transition-colors">Pricing</a>
               <div className="flex flex-col gap-3 pt-4 border-t border-dark-surface2">
-                <a href="#waitlist" className="px-4 py-2 bg-primary text-dark-bg font-medium rounded-full hover:bg-primary-hover transition-colors text-center inline-block">
+                <a href="/#waitlist" className="px-4 py-2 bg-primary text-dark-bg font-medium rounded-full hover:bg-primary-hover transition-colors text-center inline-block">
                   Start Growing Now
                 </a>
               </div>

@@ -1,8 +1,21 @@
+import Link from 'next/link'
+
 const footerLinks = {
-  Product: ['Features', 'Pricing', 'API', 'Integrations'],
-  Company: ['About', 'Blog', 'Careers', 'Press'],
-  Resources: ['Documentation', 'Help Center', 'Community', 'Contact'],
-  Legal: ['Privacy Policy', 'Terms of Service', 'Cookie Policy'],
+  Product: [
+    { name: 'Features', href: '/#how-it-works' },
+    { name: 'Pricing', href: '/#pricing' },
+  ],
+  Company: [
+    { name: 'About Us', href: '/about' },
+  ],
+  Resources: [
+    { name: 'Contact Us', href: '/contact' },
+    { name: 'Email Support', href: 'mailto:ajay@tryreelr.com' },
+  ],
+  Legal: [
+    { name: 'Privacy Policy', href: '/privacy' },
+    { name: 'Terms of Service', href: '/terms' },
+  ],
 }
 
 export default function Footer() {
@@ -12,14 +25,14 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-12">
           {/* Logo and description */}
           <div className="col-span-2 md:col-span-1">
-            <div className="flex items-center gap-2 mb-4">
+            <Link href="/" className="flex items-center gap-2 mb-4 hover:opacity-80 transition-opacity">
               <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
                 <svg className="w-5 h-5 text-dark-bg" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M8 5v14l11-7z" />
                 </svg>
               </div>
               <span className="text-xl font-bold text-text-primary">Reelr</span>
-            </div>
+            </Link>
             <p className="text-text-muted text-sm">
               The ultimate video distribution and optimization platform to drive growth and revenue.
             </p>
@@ -31,13 +44,13 @@ export default function Footer() {
               <h3 className="text-text-primary font-semibold mb-4">{category}</h3>
               <ul className="space-y-3">
                 {links.map((link) => (
-                  <li key={link}>
-                    <a
-                      href="#"
+                  <li key={link.name}>
+                    <Link
+                      href={link.href}
                       className="text-text-muted text-sm hover:text-text-primary transition-colors"
                     >
-                      {link}
-                    </a>
+                      {link.name}
+                    </Link>
                   </li>
                 ))}
               </ul>
