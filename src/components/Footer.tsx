@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 const footerLinks = {
   Product: [
@@ -25,13 +26,8 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-12">
           {/* Logo and description */}
           <div className="col-span-2 md:col-span-1">
-            <Link href="/" className="flex items-center gap-2 mb-4 hover:opacity-80 transition-opacity">
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <svg className="w-5 h-5 text-dark-bg" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-              </div>
-              <span className="text-xl font-bold text-text-primary">Reelr</span>
+            <Link href="/" className="flex items-center mb-4 hover:opacity-80 transition-opacity">
+              <Image src="/logo/reelr-logo.svg" alt="Reelr" width={100} height={32} />
             </Link>
             <p className="text-text-muted text-sm">
               The ultimate video distribution and optimization platform to drive growth and revenue.
