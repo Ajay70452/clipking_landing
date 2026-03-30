@@ -2,7 +2,6 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -12,8 +11,8 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center hover:opacity-80 transition-opacity">
-            <Image src="/logo/reelr-logo.svg" alt="Reelr" width={100} height={32} priority />
+          <Link href="/" className="hover:opacity-80 transition-opacity">
+            <span className="text-2xl font-bold text-primary">Reelr</span>
           </Link>
 
           {/* Desktop Navigation */}
