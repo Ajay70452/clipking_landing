@@ -17,23 +17,15 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
-
-            <div className="relative group">
-              <button className="flex items-center gap-1 text-dark-bg hover:text-text-muted transition-colors">
-                Resources
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-            </div>
-            <a href="/#pricing" className="text-dark-bg hover:text-text-muted transition-colors">
+            <Link href="/about" className="text-text-secondary hover:text-text-primary transition-colors">
+              About Us
+            </Link>
+            <a href="/#features" className="text-text-secondary hover:text-text-primary transition-colors">
+              Features
+            </a>
+            <a href="/#pricing" className="text-text-secondary hover:text-text-primary transition-colors">
               Pricing
             </a>
-            <div className="flex items-center gap-1 text-text-primary">
-              <span className="w-5 h-4 bg-red-500 rounded-sm flex items-center justify-center text-white text-xs">
-              </span>
-              EN
-            </div>
           </nav>
 
           <div className="hidden md:flex items-center gap-3">
@@ -61,8 +53,8 @@ export default function Header() {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-dark-surface2">
             <nav className="flex flex-col gap-4">
-
-              <a href="/contact" className="text-text-primary hover:text-primary transition-colors">Contact</a>
+              <Link href="/about" className="text-text-primary hover:text-primary transition-colors">About Us</Link>
+              <a href="/#features" className="text-text-primary hover:text-primary transition-colors">Features</a>
               <a href="/#pricing" className="text-text-primary hover:text-primary transition-colors">Pricing</a>
               <div className="flex flex-col gap-3 pt-4 border-t border-dark-surface2">
                 <a href="/#waitlist" className="px-4 py-2 bg-primary text-dark-bg font-medium rounded-full hover:bg-primary-hover transition-colors text-center inline-block">
