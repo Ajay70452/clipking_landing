@@ -106,7 +106,14 @@ export default function About() {
               <div className="aspect-[4/5] overflow-hidden rounded-2xl mb-6 relative bg-dark-surface2">
                 <img src="/team/ajay.jpg" alt="Ajay - Co-founder" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
               </div>
-              <h3 className="text-2xl font-bold text-text-primary mb-1">Ajay</h3>
+              <div className="flex items-center gap-3 mb-1">
+                <h3 className="text-2xl font-bold text-text-primary">Ajay</h3>
+                <a href="https://www.linkedin.com/in/ajay-raval-85a8551b7/" target="_blank" rel="noopener noreferrer" className="text-text-muted hover:text-primary transition-colors" aria-label="Ajay's LinkedIn">
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                  </svg>
+                </a>
+              </div>
               <div className="text-primary font-medium mb-4">Co-founder & Product</div>
               <p className="text-text-secondary leading-relaxed">
                 Ajay leads product development and engineering at Reelr. As a repeat founder with comprehensive startup experience, he has a proven track record of bringing early-stage ideas to market and scaling them. He understands exactly what it takes to build resilient AI systems that solve real problems for creators.
@@ -118,7 +125,14 @@ export default function About() {
               <div className="aspect-[4/5] overflow-hidden rounded-2xl mb-6 relative bg-dark-surface2">
                 <img src="/team/rajesh.jpg" alt="Rajesh - Co-founder" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
               </div>
-              <h3 className="text-2xl font-bold text-text-primary mb-1">Rajesh</h3>
+              <div className="flex items-center gap-3 mb-1">
+                <h3 className="text-2xl font-bold text-text-primary">Rajesh</h3>
+                <a href="https://www.linkedin.com/in/rajesh-patel-37a825375/" target="_blank" rel="noopener noreferrer" className="text-text-muted hover:text-primary transition-colors" aria-label="Rajesh's LinkedIn">
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                  </svg>
+                </a>
+              </div>
               <div className="text-primary font-medium mb-4">Co-founder & Marketing</div>
               <p className="text-text-secondary leading-relaxed">
                 Rajesh spearheads the marketing, distribution, and overall growth strategy. With years of hands-on experience in digital marketing and audience building, he knows exactly how social algorithms work and how to position Reelr to get it into the hands of the creators who need it most.
