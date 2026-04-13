@@ -27,29 +27,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-16 border-y border-dark-surface2 bg-dark-surface1/30">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-4xl font-bold text-text-primary mb-2">10M+</div>
-              <div className="text-text-muted text-sm uppercase tracking-wider">Videos Generated</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-text-primary mb-2">50k+</div>
-              <div className="text-text-muted text-sm uppercase tracking-wider">Active Creators</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-text-primary mb-2">99.9%</div>
-              <div className="text-text-muted text-sm uppercase tracking-wider">Uptime</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-text-primary mb-2">24/7</div>
-              <div className="text-text-muted text-sm uppercase tracking-wider">Global Support</div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Story / Content Section */}
       <section className="py-24">
@@ -66,25 +43,47 @@ export default function About() {
                 </p>
               </div>
             </div>
-            {/* Abstract Graphic / Card */}
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent rounded-3xl blur-2xl" />
-              <div className="relative bg-dark-surface1 border border-dark-surface2 rounded-3xl p-8 aspect-square flex flex-col justify-between">
-                <div className="flex justify-between items-start">
-                  <div className="w-12 h-12 rounded-xl bg-dark-surface2 flex items-center justify-center">
-                    <svg className="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                    </svg>
-                  </div>
-                  <div className="px-3 py-1 rounded-full bg-dark-surface2 text-xs font-medium text-text-primary">
-                    Since 2024
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-text-primary mb-2">Innovation First</h3>
-                  <p className="text-text-secondary">Continuously pushing the boundaries of generative AI and video processing technologies.</p>
-                </div>
+            {/* Animated Visual */}
+            <div className="relative flex items-center justify-center aspect-square">
+              {/* Ambient glow */}
+              <div className="absolute w-64 h-64 bg-primary/20 rounded-full blur-[80px]" />
+
+              {/* Orbit ring 1 */}
+              <div className="absolute w-72 h-72 rounded-full border border-primary/20"
+                style={{ animation: 'spin 12s linear infinite' }}>
+                <div className="absolute -top-1.5 left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-primary shadow-[0_0_8px_2px_#C8FF4D]" />
               </div>
+
+              {/* Orbit ring 2 */}
+              <div className="absolute w-52 h-52 rounded-full border border-primary/15"
+                style={{ animation: 'spin 8s linear infinite reverse' }}>
+                <div className="absolute -top-1.5 left-1/2 -translate-x-1/2 w-2.5 h-2.5 rounded-full bg-primary/80 shadow-[0_0_6px_2px_#C8FF4D]" />
+              </div>
+
+              {/* Orbit ring 3 */}
+              <div className="absolute w-36 h-36 rounded-full border border-primary/10"
+                style={{ animation: 'spin 5s linear infinite' }}>
+                <div className="absolute -top-1 left-1/2 -translate-x-1/2 w-2 h-2 rounded-full bg-primary/60 shadow-[0_0_4px_1px_#C8FF4D]" />
+              </div>
+
+              {/* Core */}
+              <div className="relative w-20 h-20 rounded-full bg-dark-surface2 border border-primary/30 flex items-center justify-center shadow-[0_0_30px_4px_rgba(200,255,77,0.15)]"
+                style={{ animation: 'pulse-core 3s ease-in-out infinite' }}>
+                <svg className="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+
+              <style>{`
+                @keyframes spin {
+                  from { transform: rotate(0deg); }
+                  to { transform: rotate(360deg); }
+                }
+                @keyframes pulse-core {
+                  0%, 100% { box-shadow: 0 0 30px 4px rgba(200,255,77,0.15); }
+                  50% { box-shadow: 0 0 50px 10px rgba(200,255,77,0.3); }
+                }
+              `}</style>
             </div>
           </div>
         </div>
